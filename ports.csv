@@ -1,0 +1,17 @@
+20/21,FTP,File Transfer Protocol
+22,SSH,Secure Shell
+23,Telnet
+25,SMTP,Simple Mail Transfer Protocol
+53,DNS,Domain Name System
+67/68,DHCP,Dynamic Host Configuration Protocol
+80,HTTP,Hypertext Transport Protocol
+110,POP3,Post Office Protocol 3
+137/139,NetBIOS,NetBT (NetBIOS over TCP/IP)
+143,IMAP,Internet Mail Access Protocol
+161/162,SNMP,Simple Network Management Protocol
+389,LDAP,Lightweight Directory Access Protocol
+443,HTTPs,Hyper Text Transport Protocol Secure
+445,SMB,Server Message Block,CIFS,Common Internet File System
+3389,RDP,Remote Desktop Protocol
+548,AFP,Apple Filing Protocol
+427,SLP,Service Location Protocol
