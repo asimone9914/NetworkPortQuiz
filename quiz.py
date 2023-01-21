@@ -1,8 +1,8 @@
 """
 Title:    Network Port Quiz
 Author:   Alex Simone
-Date:     1-18-2023
-Version:  2.0
+Date:     1-20-2023
+Version:  2.01
 
 Purpose:  This program will read values from a .csv file with
           data for network ports and their corresponding service.
@@ -16,8 +16,17 @@ import csv
 import pathlib
 import random
 
+
 # Set the location of the csv file
 csv_file = pathlib.Path("ports.csv")
+
+# Title and border design for welcome message
+TITLE = "Network Port Quiz"
+HORZ_BORDER = "=" * 23
+VERT_BORDER = "||"
+
+# Used to quit the program
+QUIT = "EXIT"
 
 
 # Open csv file, return a dictionary with the values
@@ -44,9 +53,8 @@ def main():
     
     # define loop control variable and sentinel value to exit loop
     running = True
-    QUIT = "EXIT"
     
-    print(f"\n=======================\n|| Network Port Quiz ||\n=======================\n\nType {QUIT} at any time to quit.\n")
+    print(f"\n{HORZ_BORDER}\n{VERT_BORDER} {TITLE} {VERT_BORDER}\n{HORZ_BORDER} \n\nType {QUIT} at any time to quit.\n")
     
     while running:
         # randomly select a port to quiz the user on
@@ -58,7 +66,7 @@ def main():
         
         # create a list for multiple correct answers
         correct_answers = []
-        [correct_answers.append(i.lower()) for i in ports_dict.get(port)] 
+        [correct_answers.append(i.lower().strip()) for i in ports_dict.get(port)] 
         
         # decision structure for checking answers or exiting program
         if user_answer == QUIT or user_answer == QUIT.lower():
@@ -69,6 +77,7 @@ def main():
                 print(f"\n\nCorrect! :)\n\nPort {port} is associated with the service: ")
                 [print("  " + service) for service in ports_dict.get(port)]
                 print("\n")
+                
             else:
                 print(f"\nSorry, that is incorrect!\n\nCorrect answer(s): ")
                 [print("  " + service) for service in ports_dict.get(port)]
