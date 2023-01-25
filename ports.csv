@@ -15,3 +15,6 @@
 3389,RDP,Remote Desktop Protocol
 548,AFP,Apple Filing Protocol
 427,SLP,Service Location Protocol
+995,POP3S,POP3 Secure,POP3 over TLS,Secure Post Office Protocol
+587,SMTPS,SMTP Secure,SMTP over TLS,Secure Simple Mail Transfer Protocol
+993,IMAPS,IMAP Secure,IMAP over TLS,Secure Internet Message Access Protocol
