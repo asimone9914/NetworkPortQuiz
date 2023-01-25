@@ -9,6 +9,18 @@ The program is written in Python and uses a separate .csv file to store data for
 
 
 ## Recent Changes
+
+### v2.10
+- Added a main menu and a brief "About" section
+- Now keeps track of questions answered correctly out of total questions 
+- Implemented more error handling
+    - if .csv file does not appear to be formatted correctly, display an error and exit
+- Press enter to exit after each question, screen will clear.
+    - less clutter
+    - enhanced readability
+- Changed code to be more object-oriented, for some reason lol
+
+#### v2.01
 - Added variables for quiz title and border decorations
 - Changed a line to strip spaces from beginning/end of answers from .csv file
     - helps with accidental spacing after commas in csv file
